@@ -179,13 +179,19 @@ body
 .week_special_box ul li
 {
 	float: left;
-	height: 127px;
-	width: 172px;
+	width: 30%;
 	padding: 15px;
-	margin: 20px;
+	margin: 20px 0;
 	background: #e2e1d4;
 	position: relative;
 	overflow: hidden;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.week_special_box ul li + li
+{
+	margin-left: 5%;
 }
 .week_special_box ul li img
 {
