@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<div id="login_box">
+		<div id="login_header"></div>
+		<form action="#" method="POST">
+			<div id="login_form">
+				<p><label for="phone">手机号</label><span id="phone_display"></span></p>
+				<p>
+					<input type="text" id="phone" name="phone">
+				</p>
+				<p>
+					<label for="class_and_grade" id="class_and_grade_label">所在班级</label><select name="class_and_grade" id="class_and_grade">
+					<option value="软工一班" selected="selected">软工一班</option>
+					<option value="软工二班">软工二班</option>
+					<option value="软工三班">软工三班</option>
+					<option value="计科一班">计科一班</option>
+					<option value="计科二班">计科二班</option>
+				</select>
+			</p>
+			<p><label for="password1">密码</label></p>
+			<p><input type="password" id="password1" name="password1"></p>
+			<p><label for="password2">再次输入密码</label></p>
+			<p><input type="password" id="password2" name="password2"></p>
+			<p><label id="password_strength_label">密码强度</label><span id="password_strength"><span id="strenth_pointer"></span></span></p>
+
+		</div>
+		<div id="login_footer">
+			<span class="pull_right">
+				<input type="checkbox" id="convention"><label for="convention">遵守本站规定</label>
+				<input type="submit" id="submit_btn" value="Register">
+			</span>
+			<div class="clear"></div>
+		</div>
+	</form>
+</div>
+<script src="js/login_proto.js"></script>
+</body>
+</html>

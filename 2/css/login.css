@@ -1,0 +1,130 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: #000;
+}
+*:focus { outline: none; }
+.pull_right
+{
+	float: right;
+}
+.clear{clear:both; height: 0; line-height: 0; font-size: 0}
+#login_box
+{
+	width: 30%;
+	margin: 0 auto;
+	margin-top: 1em;
+	background-color: #3d3a39;
+	overflow: hidden;
+	color: #fff;
+}
+#login_form
+{
+	overflow: hidden;
+}
+#login_box label
+{
+	font-weight: bold;
+	padding: 1em 0;
+	display: inline-block;
+}
+#login_header
+{
+	height: 6em;
+	background: url(../img/szu.png) no-repeat center;
+	background-size: 100% 100%;
+}
+#phone_display
+{
+	font-weight: 900;
+	font-size: 1.5em;
+	color: #febe7f;
+	margin-left: 1em;
+	max-width: 60%;
+	display: inline-block;
+	overflow: hidden;
+
+}
+#highlight
+{
+	color: red;
+}
+
+#login_form
+{
+	padding: 1em;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+#login_form #class_and_grade
+{
+	width: 80%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+
+}
+#login_form input,#login_form select,#phone_input
+{
+	border-radius: 5px;
+	background-color: #939393;
+	border: none;
+	padding: 0.5em;
+	width: 100%;
+	color: #fff;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+#password_strength_label,#class_and_grade_label
+{
+	display: inline-block;
+	width: 20%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+
+}
+#password_strength
+{
+	vertical-align: middle;
+	height: 1.2em;
+	display: inline-block;
+	width: 80%;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(left, green , blue); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, green, blue); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, green, blue); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, green , blue); /* 标准的语法（必须放在最后） */
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	position: relative;
+}
+#password_strength #strenth_pointer
+{
+	position: absolute;
+	height: 100%;
+	width: 0;
+	border-left: 1px solid #fff;
+}
+
+#login_footer
+{
+	padding: 1em;
+	background-color: #939393;
+}
+#login_footer #submit_btn
+{
+	padding: 0.5em;
+	background-color: #40637e;
+	margin-left: 0.5em;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+}
