@@ -51,12 +51,27 @@
 		// 密码比对
 		this.password2.oninput=function()
 		{
-			if (password1.value !== password2.value) {
-				password2.style.backgroundColor="#e11ac7";
+			var is_equel=true;
+			for(var i=0;i<password2.value.length;i++)
+			{
+				if(password2.value[i] != password1.value[i])
+				{
+					password2.style.backgroundColor="#e11ac7";
+					is_equel=false;
+					break;
+				}
 			}
-			else{
+			if (is_equel) {
 				password2.style.backgroundColor="#939393";
 			}
+		};
+		this.password2.onblur=function()
+		{
+			if(password2.value !=password1.value)
+				password2.style.backgroundColor="#e11ac7";
+			else
+				password2.style.backgroundColor="#939393";
+
 		};
 
 	};
