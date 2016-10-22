@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>留言板</title>
+	<link rel="stylesheet" href="stylesheets/index.css">
+
+</head>
+<body>
+	<main>
+		<div id="form_box">
+			
+            <p><label class="user_id_label" for="id">发帖人ID：</label><input type="text" class="user_id_input" name="user_name" id="user_name"></p>
+            <textarea class="message_input" name="content" id="content" cols="30" rows="10" maxlength="170"></textarea>
+            <p class="form_bar">
+               <span class="input_tip">还可以输入<span id="surplus_num">170</span>字</span>
+               <input type="button" class="message_sbm_btn" value="发布" id="article_sbm_btn">
+           </p>
+       </div>
+		<div id="content">
+			<h2>微博</h2>
+			<ul id="content_ul">
+               <% articles.forEach(function(article){ %>  
+                <li>
+                    <span class=" left_area">
+                        <span class="avatar"><%= article.user_name[0] %></span>
+                    </span>
+                    <span class="right_area">
+                        <p class="user_name"><%= article.user_name %></p>
+                        <p class="message_content">
+                            <%= article.content %>               
+                        </p>
+                        <p class="create_time"><%= article.date %></p>
+                    </span>
+                </li>
+                <% }) %> 
+			</ul>
+			
+		</div>
+	</main>
+	
+</body>
+<script src="javascripts/jquery.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="javascripts/message_board.js"></script>
+</html>

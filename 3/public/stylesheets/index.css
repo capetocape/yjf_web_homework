@@ -1,0 +1,128 @@
+body
+{
+	background-color: #fff;
+}
+ul,li
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+main
+{
+	width: 50%;
+	margin: 10px auto;
+	padding: 20px;
+	background: #fafafa;
+	border-radius: 5px;
+}
+
+#content h2
+{
+	padding: 10px;
+	margin: 0;
+	border-bottom: 1px solid #e2e1d4;
+}
+#content ul
+{
+	max-height: 500px;
+	overflow: auto;
+}
+#content ul li
+{
+	overflow: hidden;
+	zoom:1;
+	padding: 10px;
+	border-bottom: 1px solid #e2e1d4;
+
+}
+#content .left_area
+{
+	float: left;
+	width: 20%;
+	text-align: center;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+#content .left_area .avatar
+{
+	margin-top: 15px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px; 
+	border-radius: 50px; 
+	font-size: 20px;
+	line-height: 50px;
+	display: inline-block;
+	box-sizing: content-box;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #506B90;
+}
+
+#content .right_area
+{
+	float: right;
+	width: 80%;
+	padding: 10px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.right_area .user_name
+{
+	color: blue;
+	font-size: 20px;
+}
+.right_area .create_time
+{
+	color: #7B7676;
+	font-size: 12px;
+}
+#form_box
+{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+#form_box .user_id_label
+{
+	display: inline-block;
+	width: 20%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+#form_box .user_id_input
+{
+	width: 80%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+#form_box .user_id_input input
+{
+	width: 100%;
+}
+#form_box .form_bar
+{
+	text-align: right;
+}
+#form_box .message_sbm_btn
+{
+	padding:5px 10px;
+}
+#form_box .input_tip
+{
+
+}
+#form_box .message_input
+{
+	width: 100%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
